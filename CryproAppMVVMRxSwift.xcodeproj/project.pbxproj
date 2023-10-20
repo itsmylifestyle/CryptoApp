@@ -13,6 +13,8 @@
 		A70BFFA52AE11A7200FE7992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70BFFA32AE11A7200FE7992 /* Main.storyboard */; };
 		A70BFFA72AE11A7300FE7992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70BFFA62AE11A7300FE7992 /* Assets.xcassets */; };
 		A70BFFAA2AE11A7300FE7992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70BFFA82AE11A7300FE7992 /* LaunchScreen.storyboard */; };
+		A76E72AB2AE2B65700D8E0C3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E72AA2AE2B65700D8E0C3 /* Crypto.swift */; };
+		A76E72AD2AE2BA8800D8E0C3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E72AC2AE2BA8800D8E0C3 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A70BFFA62AE11A7300FE7992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A70BFFA92AE11A7300FE7992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A70BFFAB2AE11A7300FE7992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76E72AA2AE2B65700D8E0C3 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		A76E72AC2AE2BA8800D8E0C3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		A70BFF9C2AE11A7200FE7992 /* CryproAppMVVMRxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				A70BFF9D2AE11A7200FE7992 /* AppDelegate.swift */,
-				A70BFF9F2AE11A7200FE7992 /* SceneDelegate.swift */,
-				A70BFFA12AE11A7200FE7992 /* ViewController.swift */,
+				A76E72A92AE2B53A00D8E0C3 /* Services */,
+				A70BFFB32AE11C6B00FE7992 /* ViewModel */,
+				A70BFFB22AE11C6400FE7992 /* Model */,
+				A70BFFB12AE11C5B00FE7992 /* View */,
 				A70BFFA32AE11A7200FE7992 /* Main.storyboard */,
 				A70BFFA62AE11A7300FE7992 /* Assets.xcassets */,
 				A70BFFA82AE11A7300FE7992 /* LaunchScreen.storyboard */,
 				A70BFFAB2AE11A7300FE7992 /* Info.plist */,
 			);
 			path = CryproAppMVVMRxSwift;
+			sourceTree = "<group>";
+		};
+		A70BFFB12AE11C5B00FE7992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A70BFF9D2AE11A7200FE7992 /* AppDelegate.swift */,
+				A70BFF9F2AE11A7200FE7992 /* SceneDelegate.swift */,
+				A70BFFA12AE11A7200FE7992 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A70BFFB22AE11C6400FE7992 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A76E72AA2AE2B65700D8E0C3 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A70BFFB32AE11C6B00FE7992 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A76E72A92AE2B53A00D8E0C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A76E72AC2AE2BA8800D8E0C3 /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76E72AB2AE2B65700D8E0C3 /* Crypto.swift in Sources */,
 				A70BFFA22AE11A7200FE7992 /* ViewController.swift in Sources */,
 				A70BFF9E2AE11A7200FE7992 /* AppDelegate.swift in Sources */,
+				A76E72AD2AE2BA8800D8E0C3 /* Webservice.swift in Sources */,
 				A70BFFA02AE11A7200FE7992 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
