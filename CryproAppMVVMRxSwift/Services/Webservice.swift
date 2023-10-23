@@ -17,7 +17,7 @@ class Webservice {
     func downloadCurrencies(url: URL, completion: @escaping (Result<[Crypto], CryptoError>) -> () ) {
         
         URLSession.shared.dataTask(with: url) { data, resp, error in
-    
+    //URL
         }
     }
 }
